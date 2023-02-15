@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="app.css">
+</head>
+
+<body>
+    <form action="" name="form1">
+        <table border="2px">
+            <tr>
+                <td colspan="3">
+                    <input type="text" id="result" class="screen" name="answer">
+                </td>
+                <td>
+                    <input type="button" value="C" onclick="form1.answer.value = ' ' " id="clear" class="clear">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" value="1" onclick="form1.answer.value += '1' " class="number">
+                </td>
+                <td>
+                    <input type="button" value="2" onclick="form1.answer.value += '2' " class="number">
+                </td>
+                <td>
+                    <input type="button" value="3" onclick="form1.answer.value += '3' " class="number">
+                </td>
+                <td>
+                    <input type="button" value="+" onclick="form1.answer.value += '+' " class="operator">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" value="4" onclick="form1.answer.value += '4' " class="number">
+                </td>
+                <td>
+                    <input type="button" value="5" onclick="form1.answer.value += '5' " class="number">
+                </td>
+                <td>
+                    <input type="button" value="6" onclick="form1.answer.value += '6' " class="number">
+                </td>
+                <td>
+                    <input type="button" value="-" onclick="form1.answer.value += '-' " class="operator">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" value="7" onclick="form1.answer.value += '7' " class="number">
+                </td>
+                <td>
+                    <input type="button" value="8" onclick="form1.answer.value += '8' " class="number">
+                </td>
+                <td>
+                    <input type="button" value="9" onclick="form1.answer.value += '9' " class="number">
+                </td>
+                <td>
+                    <input type="button" value="*" onclick="form1.answer.value += '*' " class="operator">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" value="." onclick="form1.answer.value += '.' " class="decimal">
+                </td>
+                <td>
+                    <input type="button" value="0" onclick="form1.answer.value += '0' " class="number">
+                </td>
+                <td>
+                    <input type="button" value="=" onclick="form1.answer.value = eval(form1.answer.value) " class="equal">
+                </td>
+                <td>
+                    <input type="button" value="/" onclick="form1.answer.value += '/' " class="operator">
+                </td>
+            </tr>
+
+            <!-- When we click on the '=' button, the onclick() shows the sum results on the calculator screen. -->
+        </table>
+    </form>
+</body>
+
+</html>
